@@ -1,7 +1,10 @@
 package com.layer.extention;
 
 import com.layer.dao.IDAO;
+import org.springframework.stereotype.Component;
 
+
+@Component("d2")
 public class ImplDAOV2 implements IDAO {
 
     @Override

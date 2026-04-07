@@ -1,5 +1,8 @@
 package com.layer.dao;
 
+import org.springframework.stereotype.Component;
+
+@Component("d")
 public class ImplDAO implements IDAO{
 
     @Override

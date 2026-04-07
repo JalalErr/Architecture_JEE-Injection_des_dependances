@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class Pres2 {
     // Exceprions : FileNotFoundException, ClassNotFoundException, InstantiationException, IllegalAccessException
     public static void main(String[] args) throws Exception {
+
         Scanner scanner = new Scanner(new File("Config.txt"));
 
         String doaClassName = scanner.nextLine();
