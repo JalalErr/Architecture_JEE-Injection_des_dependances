@@ -8,16 +8,17 @@ import org.springframework.stereotype.Component;
 @Component("metier")
 public class ImplMetier implements IMetier{
 
-    @Autowired
+//    @Autowired
     private IDAO dao; // Couplage faible
 
-    public ImplMetier(IDAO dao) {
+    public ImplMetier(@Qualifier("d2") IDAO dao) {
         this.dao = dao;
     }
 
+    /*
     public ImplMetier() {
     }
-
+    */
     @Override
     public double calcule() {
         double t = dao.getData();
